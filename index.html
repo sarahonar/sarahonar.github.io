@@ -3,104 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sara Honarvar's GitHub Portfolio">
     <title>Sara Honarvar | Portfolio</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+        /* General Reset */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f0fc;
+            color: #3a3a3a;
+            margin: 0;
+            line-height: 1.6;
+        }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #ffdfd3;
+            color: #5b5b5b;
             text-align: center;
-            padding: 15px;
+            padding: 20px 0;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #ffdfd3;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
         }
         nav a {
             margin: 0 15px;
-            color: white;
+            color: #5b5b5b;
             text-decoration: none;
-            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff7f7f;
         }
         main {
-            padding: 20px;
-            max-width: 900px;
+            padding: 30px 20px;
+            max-width: 1000px;
             margin: auto;
         }
         section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            background-color: #fff4e6;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #ff7f7f;
+            margin-bottom: 10px;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        p, ul {
+            color: #5b5b5b;
+            margin-bottom: 15px;
         }
         footer {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #ffdfd3;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0;
+            color: #5b5b5b;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Sara Honarvar</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        Sara Honarvar
     </header>
-
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi! I’m Sara Honarvar, a PhD student in Mechanical Engineering with a focus on Controls and Robotics at the University of Maryland, College Park. My research spans multi-agent systems, machine learning, and human interaction modeling. I enjoy solving problems at the intersection of robotics and AI to build intelligent, distributed systems.</p>
+            <div class="about-me">
+                <img src="profile.jpg" alt="Sara Honarvar">
+                <p>Hi there! I'm Sara Honarvar, a PhD student at the University of Maryland. I specialize in Controls & Robotics, with a research focus on multi-agent systems, human interaction modeling, and machine learning. I love solving problems that merge robotics, AI, and control theory to create intelligent systems.</p>
+            </div>
         </section>
-
         <section id="education">
             <h2>Education</h2>
             <ul>
-                <li><strong>Ph.D. in Mechanical Engineering</strong> (Controls & Robotics), University of Maryland, College Park, MD (Expected 2025), GPA: 3.96/4</li>
-                <li><strong>M.A. in Kinesiology</strong> (Neuromechanics), University of Maryland, College Park, MD (2019), GPA: 3.88/4</li>
-                <li><strong>B.Sc. in Biomedical Engineering</strong> (Biomechanics), Amirkabir University of Technology, Tehran, Iran (2015), GPA: 3.83/4</li>
-                <li><strong>B.Sc. Minor</strong> in Mechanical Engineering (Controls), Amirkabir University of Technology, Tehran, Iran (2015), GPA: 3.74/4</li>
+                <li><strong>Ph.D. in Mechanical Engineering</strong>, University of Maryland (Expected 2025)</li>
+                <li><strong>M.A. in Kinesiology</strong>, University of Maryland (2019)</li>
+                <li><strong>B.Sc. in Biomedical Engineering</strong>, Amirkabir University of Technology (2015)</li>
             </ul>
         </section>
-
         <section id="experience">
             <h2>Experience</h2>
             <ul>
                 <li><strong>Platform Architecture Intern</strong> at Apple Inc. (2024)</li>
-                <li><strong>Microsoft Diversity in Robotics and AI Research Fellow</strong> at Maryland Robotics Center (2024)</li>
+                <li><strong>Microsoft Fellow</strong> at Maryland Robotics Center (2024)</li>
                 <li><strong>Data Scientist Intern</strong> at Ford Motor Company (2023)</li>
-                <li><strong>Amazon Lab126 Robotics and AI Research Fellow</strong> at Maryland Robotics Center (2020-2023)</li>
-                <li><strong>Graduate Research Assistant</strong> at Collaborative Controls and Robotics Lab (2019-Present)</li>
+                <li><strong>Amazon Lab126 Fellow</strong> at Maryland Robotics Center (2020-2023)</li>
             </ul>
         </section>
-
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li>Geometric Graph Neural Network Modeling of Human Interactions in Crowded Environments (2024)</li>
-                <li>Learning Optimal Interaction Weights in Multi-Agent Systems (Under Review)</li>
-                <li>Human-Human Collaboration Modeling for Consensus Algorithms (2022)</li>
-                <li>Effectiveness of Augmented Reality for Human Swarm Interactions (2022)</li>
+                <li>Geometric Graph Neural Network Modeling of Human Interactions (2024)</li>
+                <li>Optimal Interaction Weights in Multi-Agent Systems (Under Review)</li>
+                <li>Modeling Human-Human Collaboration for Consensus Algorithms (2022)</li>
             </ul>
         </section>
-
         <section id="contact">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me via email at: <a href="mailto:honarvar@umd.edu">honarvar@umd.edu</a></p>
-            <p>Check out my <a href="https://github.com/sarahonar" target="_blank">GitHub</a> for code and projects, or connect on <a href="https://www.linkedin.com/in/sara-honarvar/" target="_blank">LinkedIn</a>.</p>
+            <p>I'm always open to discussing research opportunities and collaborations! Reach me at: <a href="mailto:honarvar@umd.edu">honarvar@umd.edu</a></p>
+            <p>Check out my <a href="https://github.com/sarahonar" target="_blank">GitHub</a> or connect on <a href="https://www.linkedin.com/in/sara-honarvar/" target="_blank">LinkedIn</a>.</p>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Sara Honarvar. All rights reserved.</p>
+        &copy; 2024 Sara Honarvar. All rights reserved.
     </footer>
-
 </body>
 </html>
